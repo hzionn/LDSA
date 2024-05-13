@@ -9,11 +9,11 @@ void swap(int *a, int *b) {
 }
 
 // print the array
-void print_array(int arr[]) {
+void print_array(int arr[], int size) {
     printf("iteration: ");
-    for (int i = 0; i < 5; i++) {
+    for (int i = 0; i < size; i++) {
         printf("%d", arr[i]);
-        if (i < 5 - 1) {
+        if (i < size - 1) {
             printf(", ");
         }
     }
