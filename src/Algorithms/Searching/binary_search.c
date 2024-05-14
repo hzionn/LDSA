@@ -1,4 +1,4 @@
-/* Binary Search Algorithm 
+/* Binary Search Algorithm
  *
  * the array must be sorted before applying binary search
  */
@@ -13,7 +13,7 @@ int binary_search(int arr[], int size, int target) {
 
     while (left <= right) {
         int mid = left + (right - left) / 2;
-        if (arr[mid]== target) {
+        if (arr[mid] == target) {
             return mid;
         } else if (arr[mid] < target) {
             left = mid + 1;
