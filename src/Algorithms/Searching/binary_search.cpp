@@ -20,6 +20,7 @@ int binary_search(vector<int>& arr, int target) {
 }
 
 int main(void) {
+    // declare a vector with an initializer list
     vector<int> arr = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
     int target = 2;
 
