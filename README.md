@@ -1,6 +1,6 @@
 # LDSA
 
-Learning Data Structures and Algorithms in C/C++.
+Learning Data Structures and Algorithms in C/C++ from the beginning.
 
 ## Prerequisites
 
@@ -15,16 +15,15 @@ g++ -std=c++11 -o <output_file> <source_file.cpp>
 ## Example Folder Structure
 
 ```
-.
-├── LICENSE
-├── README.md
-└── src
-    ├── Algorithms
-    │   └── Sorting
-    │       ├── bubble_sort.c
-    │       └── sorting.md
-    └── DataStructures
-        └── Array
-            ├── array.c
-            └── array.md
+src
+├── Algorithms
+│  ├── Searching
+│  └── Sorting
+├── Basic
+│  ├── C
+│  └── Cpp
+└── DataStructures
+   ├── Array
+   ├── LinkedList
+   └── Tree
 ```
