@@ -9,7 +9,7 @@ Learning Data Structures and Algorithms in C/C++.
 
 ```bash
 gcc -o <output_file> <source_file.c>
-g++ -o <output_file> <source_file.cpp>
+g++ -std=c++11 -o <output_file> <source_file.cpp>
 ```
 
 ## Example Folder Structure
