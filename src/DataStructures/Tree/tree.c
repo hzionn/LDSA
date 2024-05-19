@@ -1,32 +1,32 @@
-// tree
+// tree data structure
 
 #include <stdio.h>
 #include <stdlib.h>
 
 // Definition of a tree node
 typedef struct TreeNode {
-    int data;
+    int val;
     struct TreeNode *left;
     struct TreeNode *right;
 } TreeNode;
 
 // Function to create a new tree node
-TreeNode* createNode(int data) {
+TreeNode* createNode(int val) {
     TreeNode *newNode = (TreeNode *)malloc(sizeof(TreeNode));
-    newNode->data = data;
+    newNode->val = val;
     newNode->left = NULL;
     newNode->right = NULL;
     return newNode;
 }
 
 // Function to insert a node in the binary search tree
-TreeNode* insertNode(TreeNode *root, int data) {
+TreeNode* insertNode(TreeNode *root, int val) {
     if (root == NULL) { // Empty tree
-        root = createNode(data);
-    } else if (data < root->data) { // Insert in the left subtree
-        root->left = insertNode(root->left, data);
+        root = createNode(val);
+    } else if (val < root->val) { // Insert in the left subtree
+        root->left = insertNode(root->left, val);
     } else { // Insert in the right subtree
-        root->right = insertNode(root->right, data);
+        root->right = insertNode(root->right, val);
     }
     return root;
 }
@@ -35,7 +35,7 @@ TreeNode* insertNode(TreeNode *root, int data) {
 void inorderTraversal(TreeNode *root) {
     if (root != NULL) {
         inorderTraversal(root->left);
-        printf("%d ", root->data);
+        printf("%d ", root->val);
         inorderTraversal(root->right);
     }
 }
