@@ -1,3 +1,5 @@
+// linked list
+
 #include <iostream>
 using namespace std;
 
@@ -78,6 +80,7 @@ class LinkedList {
 };
 
 int main() {
+    // create a new linked list instance
     LinkedList list;
     list.insert(10);
     list.insert(20);
