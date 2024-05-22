@@ -1,11 +1,10 @@
-BasedOnStyle:  LLVM
+BasedOnStyle: LLVM
 AllowShortFunctionsOnASingleLine: false
 AllowShortIfStatementsOnASingleLine: false
 AllowShortLoopsOnASingleLine: false
-# ColumnLimit:    120
-IndentWidth:     4
-TabWidth:        4
-UseTab:          Never
+IndentWidth: 4
+TabWidth: 4
+UseTab: Never
 # IndentCaseLabels: false
 # MaxEmptyLinesToKeep: 1
 BreakBeforeBraces: Attach
